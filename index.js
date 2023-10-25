@@ -14,7 +14,11 @@ var Utilities = Utilities || (function () {
         }
     }
 })();
+Utilities.userSettings = {
+
+}
 
 Utilities.settings = {
-    wrapperId: 'some'
+    wrapperId: 'some',
+    ...Utilities.userSettings,
 }
