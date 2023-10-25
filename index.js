@@ -1,5 +1,6 @@
+let Utilities;
+
 window.onload = function(){
-    let Utilities;
     Utilities = Utilities || (function () {
 
         //Cannot be called from outside this function
