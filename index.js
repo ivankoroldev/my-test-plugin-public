@@ -1,4 +1,4 @@
-let Utilities = Utilities || (function () {
+var Utilities = Utilities || (function () {
 
     //Cannot be called from outside this function
     const privateFunction = () => {
