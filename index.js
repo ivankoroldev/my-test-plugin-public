@@ -6,7 +6,7 @@ var Utilities = Utilities || (function () {
         console.log(Utilities.settings)
         console.log(box);
         box.innerHTML =
-            '<object width="100%" type="text/html" data="./index.html"</object>';
+            '<object width="100%" type="text/html" data="https://cdn.jsdelivr.net/gh/ivankoroldev/my-test-plugin-public/index.html"></object>';
     }
 
     //Return only what must be publicly accessible, in this
