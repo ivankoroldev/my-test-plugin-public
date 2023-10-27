@@ -1,3 +1,5 @@
+import plugin from "./plugin/plugin";
+
 var Utilities = Utilities || (function () {
 
     //Cannot be called from outside this function
@@ -14,7 +16,8 @@ var Utilities = Utilities || (function () {
     return {
         init: (userSettings) => {
             Utilities.settings = {...Utilities.settings, ...userSettings};
-            privateFunction();
+            plugin.loadPage(Utilities.settings.wrapperId);
+            //privateFunction();
         }
     }
 })();
@@ -22,3 +25,6 @@ var Utilities = Utilities || (function () {
 Utilities.settings = {
     wrapperId: 'some',
 }
+
+export default Utilities;
+
